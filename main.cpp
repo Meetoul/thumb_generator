@@ -29,7 +29,9 @@ int main(int argc, char **argv)
 {
     if (argc != 5)
     {
-        printf("Invalid parameters");
+        std::cout << "Usage: ./ThumbGen [directory with .jpg images] [scale factor] "
+                     "[number of workers] [number of resizing threads]"
+                  << std::endl;
         return -1;
     }
     std::string folder = argv[1];
